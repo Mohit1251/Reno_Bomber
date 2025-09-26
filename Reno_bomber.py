@@ -105,16 +105,6 @@ def loading_animation(duration=5):
     sys.stdout.write(Fore.GREEN + Style.BRIGHT + "\r✔ Done processing!          \n")
 
 
-def print_box(title, content, color):
-    border = f"{color}{'─' * (len(max(content, key=len)) + 4)}{Style.RESET_ALL}"
-    print(f"{color}┌{border}┐{Style.RESET_ALL}")
-    print(f"{color}│ {title.center(len(border)-2)} │{Style.RESET_ALL}")
-    print(f"{color}├{border}┤{Style.RESET_ALL}")
-    for line in content:
-        print(f"{color}│ {line.ljust(len(border)-2)} │{Style.RESET_ALL}")
-    print(f"{color}└{border}┘{Style.RESET_ALL}")
-
-
 def validation_Phone_number(prompt):
     while True:
         number=input(prompt).strip().replace(" ","").replace("+91","")
