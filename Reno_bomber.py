@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# THIS SMS BOMBER IS FOR EDUCATIONAL AND RESEARCH PERPOSE ONLY.
 
 import json
 import requests
@@ -255,6 +256,7 @@ def sms_bomb():
     
     except KeyboardInterrupt:
         print(Fore.RED + Style.BRIGHT + "\n[ ! ] Bombing manually stopped by user.") 
+
 
 
 
