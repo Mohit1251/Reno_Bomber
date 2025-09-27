@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-# THIS SMS BOMBER IS FOR EDUCATIONAL AND RESEARCH PERPOSE ONLY.
+
 
 import json
 import requests
