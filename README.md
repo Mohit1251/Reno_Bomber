@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/MrRenoX/Reno_Bomber"><img src="https://i.ibb.co/4n7gZ1dr" alt="Reno_Bomber" width="220"/></a>
+  <a href="https://github.com/MrRenoX/Reno_Bomber"><a href="https://imgbb.com/"><img src="https://i.ibb.co/mVGFCN8W/reno-bomber.png" alt="reno-bomber"  width="220"/></a>
   <br>
   Reno_Bomber v1.0.0
   <br>
