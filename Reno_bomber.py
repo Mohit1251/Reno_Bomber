@@ -168,6 +168,7 @@ def send_bomb(phone,api,counter):
 
 
 def run_until_target(target,phone,pause_per_send=0.5,max_attempts=None):
+    "THIS IS RUN_UNTIL_TARGET IS FOR BOMB ONE BY ONE  "
     successes = 0
     attempts = 0
     failures = 0
