@@ -124,5 +124,74 @@ python Reno_bomber.py
 **Tutorial:** Logs include timestamps, success/failure stats, and optional feedback reports for evaluation.
 
 
+## Contributing to Reno Bomber
+
+We welcome contributions from developers and researchers to improve Reno Bomber. If you want to add new features, APIs, or improve existing functionality, follow the guidelines below:
+
+---
+
+### How You Can Contribute
+
+1. **Add New APIs**  
+   - You can integrate new **SMS API, call API, or MAIL API**.  
+   - Make sure to follow the same modular structure (`apidata.json).
+   - When integrate new api Please make moduler like sno,Type api like(sms|call|mail).
+   - Provide proper **documentation** for any new API integration.
+
+2. **Extend Functionality**  
+   - Add new **APIS , and add in the (apidata.json) and fixed in python file**.
+   - Fixed and improve the Python file.
+   - If Comfertable in BASH Scripting Please Add Bash MENU.  
+   - Improve the monitoring, reporting, or error handling mechanisms.  
+
+3. **Improve Existing Modules**  
+   - Refactor code for better performance, reliability, and readability.  
+   - Add unit tests for new or existing functions.  
+   - Optimize data validation and input handling.
+
+4. **Submit Your Contributions**  
+   - Fork the repository.  
+   - Create a new branch:  
+     ```bash
+     git checkout -b feature/your-feature-name
+     ```  
+   - Make your changes and test thoroughly.  
+   - Commit your changes with clear messages:  
+     ```bash
+     git commit -m "Add [feature/API name] for SMS/Call/Email"
+     ```  
+   - Push your branch and open a Pull Request (PR).  
+
+5. **Guidelines for Code Quality**  
+   - Follow **PEP8 / Python style guide**.  
+   - Include **docstrings** and comments for clarity.  
+   - Ensure new modules or APIs do **not break existing functionality**.  
+
+---
+
+### Examples of Contributions
+
+- Adding a **new SMS API** module with retry logic.  
+- Integrating **MAIL API** for mail bombing.  
+- Implementing **call API** for call bombing.  
+- Enhancing **logging and monitoring** with json file.
+- Add BASH Scripting for Professional Menu and Automation.
+
+---
+
+> **Note:** All contributions must comply with responsible use policies. Avoid adding features that enable spam, harassment, or illegal activity. Reno Bomber is intended strictly for **educational and research purposes**.
+
+
+
+
+## Support
+
+Please Support our Tool  
+Contributions, issues, and feature requests are welcome!  
+Give a ★ if you like this project!
+
+<p align="right"> Last Tool Update: 10/01/2025 </p>
+
+
 
 
