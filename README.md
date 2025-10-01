@@ -101,22 +101,26 @@ python Reno_bomber.py
 
 #### 1️⃣ Input Collection
 ![Image 1](https://i.ibb.co/yFqSQBw4/IMG-20251001-110753.jpg)  
-**Description:** Collects all required inputs like Whats user want to Choose like(SMS/CALL/MAIL).  
+**Description:** Collects all required inputs like Whats user want to Choose like(SMS/CALL/MAIL).
+
 **Tutorial:** Data is gathered from input files or user interface, Select the Correct Input Like(SMS/CALL/MAIL).  
 
 #### 2️⃣ Data Preparation
 ![Image 2](https://i.ibb.co/6k7bDYn/IMG-20251001-110740.jpg)  
-**Description:** Collects all required inputs like Phone Number, Number of Time , Time of delay .  
+**Description:** Collects all required inputs like Phone Number, Number of Time , Time of delay . 
+
 **Tutorial:** Python scripts ensure all templates are structured correctly, placeholders are replaced, and everything is queued systematically.  
 
 #### 3️⃣ Dispatch Engine
 ![Image 3](https://i.ibb.co/1GL447k7/IMG-20251001-110716.jpg)  
 **Description:** Handles sending messages or making calls based on configured channels.  
+
 **Tutorial:** The engine iterates through input data, dispatches messages using APIs/SDKs, and records the status of each action.  
 
 #### 4️⃣ Monitoring & Logging
 ![Image 4](https://i.ibb.co/WpjbY7V2/IMG-20251001-110700.jpg)  
 **Description:** Tracks activities in real-time and generates logs for performance review and debugging.  
+
 **Tutorial:** Logs include timestamps, success/failure stats, and optional feedback reports for evaluation.
 
 
